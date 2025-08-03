@@ -3,9 +3,10 @@
     box-sizing: border-box;
 }
 
-.form-register {
+.form-register{
     width: 400px;
-    background-color:ghostwhite;
+    background-color:#24303c;
+;
     padding: 300px;
     margin-top: 100px;
     border-radius: 4px;
