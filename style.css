@@ -25,5 +25,26 @@
     border: 1px solid blue;
     font-family: 'Times New Roman';
     font-size: 18px;
-    
+}
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-register a {
+    color: blue;
+    text-decoration: none;
+}
+.form-register a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.form-register botons {
+    width: 100%;
+    background: #24303c;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 }
