@@ -3,17 +3,17 @@
     box-sizing: border-box;
 }
 
-.form-register{
+form-register{
     width: 400px;
     background-color:#24303c;
-;
     padding: 300px;
     margin-top: 100px;
     border-radius: 4px;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
     color: black
 }
-.form-register h4 {
+
+.form-register {
     font-size: 22px;
     margin-bottom: 20px;
 }
@@ -24,7 +24,7 @@
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid blue;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 .form-register p {
