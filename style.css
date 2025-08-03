@@ -2,6 +2,18 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    background: color #e4e4e4;;
+    display: flex;
+    align-items: center ;
+    justify-items: center;
+    min-height: 100vh;
+    margin-top: 100px;
+    border-radius: 4px;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black    
+}
 
 form-register{
     width: 400px;
