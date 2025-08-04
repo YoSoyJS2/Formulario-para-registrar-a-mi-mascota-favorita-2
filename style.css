@@ -20,23 +20,45 @@ body {
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
 }
 
-h2 {
+form h2 {
     font-size: 25px;
     color: #1e1e1e;
     text-transform: uppercase;
-    margin-bottom: 35;
+    margin-bottom: 35px;
 }
 .input-container {
     position: relative;
 } 
 
-i {
+.input-container > i {
     padding: 14px;
     border-radius: 50%;
     background: linear-gradient(
         90deg
         rgba(153,26,123,1) 0%,
         rgba(117,30,156,1) 50%
-    )
-
+    );
+    color: #fcfef7;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+.imput-container > input {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #cbcbcb;
+    font-size: 16px;
+    outline: none;
+    color: #1e1e1e;
+}
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    
 }
