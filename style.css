@@ -2,7 +2,8 @@
     padding:0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #e4e4e4;;
     display: flex;
     align-items: center ;
@@ -10,11 +11,31 @@ body{
     min-height: 100vh;
     font-family: 'Times New Roman', Times, serif;
 }
-form{
+
+form {
     background-color: #f5f5f5;
     padding: 50px;
     width: 420px;
     text-align: center;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
 }
+form h2 {
+    font-size: 25px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    margin-bottom: 35;
+}
+.input-container {
+    position: relative;
+} 
 
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background: linear-gradient(
+        90deg
+        rgba(153,26,123,1) 0%,
+        rgba(117,30,156,1) 50%
+    )
+
+}
