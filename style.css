@@ -27,9 +27,7 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 35px;
 }
-.input-group {
-    position: relative;
-} 
+
 
 .input-container {
     padding: 14px;
@@ -56,13 +54,7 @@ h2 {
     outline: none;
     color: #1e1e1e;
 }
-::placeholder {
-    color: #a0a0a0;
-    font-size: 16px;
-    text-decoration: none;
-    margin-bottom: 25px;
 
-}
 form label {
   display: block;
   margin-top: 15px;
