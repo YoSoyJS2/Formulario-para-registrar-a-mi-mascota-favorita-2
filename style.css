@@ -99,7 +99,8 @@ form label {
 }
 
 form input,
-form textarea {
+form label,
+form select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -107,7 +108,7 @@ form textarea {
   border-radius: 4px;
 }
 
-form button {
+form p {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -119,6 +120,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+form p:hover {
   background-color: #0056b3;
 }
+
