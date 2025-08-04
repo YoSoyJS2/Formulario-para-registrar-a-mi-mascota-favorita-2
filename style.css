@@ -58,3 +58,16 @@ form p {
 form p:hover {
   background-color: #0056b3;
 }
+.input-container {
+    position: relative;
+} 
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    color: #fcfef7;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
