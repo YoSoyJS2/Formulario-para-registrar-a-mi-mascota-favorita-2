@@ -1,112 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Formulario registro de mi mascota favorita</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Mascota</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de mi Mascota Favorita</h1>
 
-    <body>
-     <section class="form-register">
-        <form method="post" autocomplete="off">
-            <h2>Formulario registro de mi mascota favorita</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos del dueño</legend>
 
-            <div class="input-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-                <div class="input-container">
-                <label for="Nombre">Nombre:</label>
-                <input class="control" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                <i class="fa-solid fa-user"></i>
-                </div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
 
-                <div class="input-container">
-                 <label for="raza">Raza:
-                    <select name="raza">
-                     <option value="Pastor alemán">Pastor alemán</option>
-                     <option value="Bulldog">Bulldog</option> 
-                     <option value="Labrador retriever">Labrador retriever</option> 
-                     <option value="Golden retriever">Golden retriever</option> 
-                     <option value="Bulldog francés">Bulldog francés</option> 
-                     <option value="Husky siberiano">Husky siberiano</option> 
-                     <option value="Beagle">Beagle</option> 
-                     <option value="Poodle">Poodle</option> 
-                     <option value="Chihuahua"> Chihuahua</option>  
-                     <option value="Malamute de Alaska">Malamute de Alaska</option> 
-                     <option value="Dachshund">Dachshund</option> 
-                     <option value="Boyero de Berna">Boyero de Berna</option> 
-                     <option value="Pastor ganadero australiano">Pastor ganadero australiano</option> 
-                     <option value="Pug">Pug</option> 
-                     <option value="Airedale terrier">Airedale terrier</option> 
-                     <option value="Rottweiler">Rottweiler</option> 
-                     <option value="American Staffordshire terrier">American Staffordshire terrier</option> 
-                     <option value="Pastor ovejero australiano">Pastor ovejero australiano</option> 
-                     <option value="Affenpinscher">Affenpinscher</option> 
-                     <option value="Bichón frisé">Bichón frisé</option> 
-                     <option value="Border collie">border collie</option> 
-                     <option value="Gran danés">Gran danés</option> 
-                     <option value="Bichón maltés">Bichón maltés</option> 
-                     <option value="Afgano">Afgano</option> 
-                     <option value="Esquimal americano">Esquimal americano</option> 
-                     <option value="Bóxer">Bóxer</option> 
-                     <option value="Cocker spaniel inglés">Cocker spaniel inglés</option> 
-                     <option value="Pastor de Anatolia">Pastor de Anatolia</option> 
-                     <option value="Cavalier King Charles Spaniel">Cavalier King Charles Spaniel</option> 
-                     <option value="Chow Chow">Chow Chow</option> 
-                     <option value="Pomerania">Pomerania</option> 
-                     <option value="Yorkshire terrier">Yorkshire terrier</option> 
-                     <option value="Bull terrier">Bull terrier</option> 
-                     <option value="Basset hound">Basset hound</option> 
-                     <option value="Corgi galés de Pembroke">Corgi galés de Pembroke</option> 
-                     <option value="Basenji">Basenji</option> 
-                     <option value="San bernardo">San bernardo</option> 
-                     <option value="Perro sedoso de la Habana">Perro sedoso de la Habana</option> 
-                     <option value="Pastor belga">Pastor belga</option> 
-                     <option value="Terranova">Terranova</option> 
-                     <option value="Boston terrier">Boston terrier</option> 
-                     <option value="Cairn terrier">Cairn terrier</option> 
-                     <option value="Spaniel bretón">Spaniel bretón</option> 
-                     <option value="Pastor de las islas Shetland">Pastor de las islas Shetland</option> 
-                     <option value="Terrier ruso negro">Terrier ruso negro</option> 
-                     <option value="Bullmastiff">Bullmastiff</option> 
-                     <option value="Bedlington terrier">Bedlington terrier</option> 
-                     <option value="Doberman">Doberman</option> 
-                     <option value="Shih Tzu">Shih Tzu</option> 
-                     <option value="Mastín italiano">Mastín italiano</option> 
-                     <option value="Pit Bull Terrier Americano">Pit Bull Terrier Americano</option> 
-                    </select>
-                    <i class="fa-solid fa-user"></i>
-                 </label>
-                </div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej: 987654321" required />
+      </fieldset>
 
-                <div class="input-container">
-                 <label for="Edad">Edad:</label>
-                 <input class="control" type="number" name="edad" id="edad" placeholder="Ingrese su Edad">
-                 <i class="fa-solid fa-user"></i>
-                </div>
+      <fieldset>
+        <legend>Datos de la mascota</legend>
 
-                <div class="input-container">
-                 <label for="Tamaño">Tamaño:</label>
-                 <input class="control" type="number" name="tamaño" id="tamaño" placeholder="Ingrese su Tamaño">
-                 <i class="fa-solid fa-user"></i>
-                </div>
+        <label for="mascota-nombre">Nombre de la mascota:</label>
+        <input type="text" id="mascota-nombre" name="mascota-nombre" required />
 
-                <div class="input-container">
-                 <label for="Peso">Peso:</label>
-                 <input class="control" type="number" name="peso" id="peso" placeholder="Ingrese su Peso">
-                 <i class="fa-solid fa-user"></i>
-                </div>
+        <label for="tipo">Tipo de mascota:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccione</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="ave">Ave</option>
+          <option value="otro">Otro</option>
+        </select>
 
-            </div>
-        </form>
-        
-            <p> Estoy de acuerdo con 
-                <a href="#"> Terminos y Condiciones</a> 
-            </p>
-            
-            <button type="submit">Registrar</button>
-            <p>
-                <a href="#"> ¿Ya tengo cuenta? </a>
-            </p>
-     </section>
-    </body>
+        <label for="edad">Edad de la mascota:</label>
+        <input type="number" id="edad" name="edad" min="0" max="100" required />
+
+        <label for="sexo">Sexo:</label>
+        <div class="radio-group">
+          <input type="radio" id="macho" name="sexo" value="macho" required />
+          <label for="macho">Macho</label>
+
+          <input type="radio" id="hembra" name="sexo" value="hembra" />
+          <label for="hembra">Hembra</label>
+        </div>
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required />
+
+        <label for="vacunas">¿Tiene vacunas?</label>
+        <select id="vacunas" name="vacunas" required>
+          <option value="">Seleccione</option>
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+      </fieldset>
+
+      <button type="submit">Registrar Mascota</button>
+    </form>
+  </div>
+</body>
 </html>

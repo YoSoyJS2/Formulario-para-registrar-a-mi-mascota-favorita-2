@@ -1,194 +1,98 @@
+/* Reset básico */
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 40px;
-  margin: 0;
-}
-
-
-.form {
-    background-color: #f5f5f5;
-    padding: 50px;
-    width: 420px;
-    text-align: center;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}
-
-.form-register {
-  background-color: #fff;
-  padding: 25px 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+  padding: 20px;
 }
 
-.div{
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
   display: block;
   margin-top: 15px;
-  color: #555;
+  font-weight: 500;
 }
 
-form input-group,
-form input-container {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
-form p {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
-form p:hover {
-  background-color: #0056b3;
-}
-
-* { margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #e4e4e4;;
-    display: flex;
-    align-items: center ;
-    justify-items: center;
-    min-height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.form {
-    background-color: #f5f5f5;
-    padding: 50px;
-    width: 420px;
-    text-align: center;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
-}
-
-form h2 {
-    font-size: 25px;
-    color: #1e1e1e;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
-.input-container {
-    position: relative;
-} 
-
-.input-container > i {
-    padding: 14px;
-    border-radius: 50%;
-    background: linear-gradient(
-        90deg
-        rgba(153,26,123,1) 0%,
-        rgba(117,30,156,1) 50%
-    );
-    color: #fcfef7;
-    position: absolute;
-    font-size: 20px;
-    top: 4px;
-    left: 10px;
-}
-.imput-container > input {
-    padding: 17px 15px 17px 65px;
-    width: 100%;
-    margin-bottom: 25px;
-    border-radius: 35px;
-    background-color: transparent;
-    border: 2px solid #cbcbcb;
-    font-size: 16px;
-    outline: none;
-    color: #1e1e1e;
-}
-::placeholder {
-    color: #a0a0a0;
-    font-size: 16px;
-    text-decoration: none;
-    margin-bottom: 25px;
-    
-}
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f0f2f5;
+.radio-group {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 40px;
-  margin: 0;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.form-container {
-  background-color: #fff;
-  padding: 25px 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+.radio-group input {
+  margin-right: 5px;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  color: #555;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
+button[type="submit"] {
+  background-color: #28a745;
   color: white;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #0056b3;
+button[type="submit"]:hover {
+  background-color: #218838;
 }
